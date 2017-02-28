@@ -86,8 +86,8 @@
       <HintPath>..\..\packages\EPiServer.CMS.UI.Core.10.2.0\lib\net45\EPiServer.Cms.Shell.UI.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="EPiServer.Commerce.Internal.Migration, Version=10.3.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0-pre-002137\lib\net45\EPiServer.Commerce.Internal.Migration.dll</HintPath>
+    <Reference Include="EPiServer.Cms.UI.AspNetIdentity, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPiServer.CMS.UI.AspNetIdentity.10.2.0\lib\net45\EPiServer.Cms.UI.AspNetIdentity.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.Commerce.Shell, Version=10.3.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
@@ -501,7 +501,7 @@
     <Compile Include="Features\Checkout\Models\ShippingMethodInfoModel.cs" />
     <Compile Include="Features\Checkout\ViewModels\UpdateAddressViewModel.cs" />
     <Compile Include="Features\Checkout\ViewModels\UpdateShippingMethodViewModel.cs" />
-    <Compile Include="Features\Folder\Editorial\Blocks\MapBlock.cs" />
+    <Compile Include="Features\Market\Models\EmptyMarket.cs" />
     <Compile Include="Features\Folder\Editorial\Controllers\MapBlockController.cs" />
     <Compile Include="Features\Market\Services\MarketContentLoader.cs" />
     <Compile Include="Features\Payment\Models\PaymentMethodModel.cs" />
@@ -566,14 +566,11 @@
     <Compile Include="Features\Folder\Editorial\Controllers\FreeTextBlockController.cs" />
     <Compile Include="Features\Folder\Pages\FolderPage.cs" />
     <Compile Include="Features\Login\Controllers\LoginController.cs" />
-    <Compile Include="Features\Login\Controllers\BackendLoginController.cs" />
     <Compile Include="Features\Shared\Controllers\IdentityControllerBase.cs" />
     <Compile Include="Features\Login\Services\UserService.cs" />
     <Compile Include="Features\Login\ViewModels\ExternalLoginConfirmationViewModel.cs" />
-    <Compile Include="Features\Login\ViewModels\BackendLoginViewModel.cs" />
-    <Compile Include="Features\Login\ViewModels\InternalLoginViewModel.cs" />
+    <Compile Include="Features\Login\ViewModels\LoginViewModel.cs" />
     <Compile Include="Features\Login\ViewModels\LoginPageViewModel.cs" />
-    <Compile Include="Features\Login\ViewModels\LoginViewModelBase.cs" />
     <Compile Include="Features\Login\ViewModels\RegisterAccountViewModel.cs" />
     <Compile Include="Features\ResetPassword\ViewModels\ResetPasswordViewModel.cs" />
     <Compile Include="Features\Market\Controllers\CurrencyController.cs" />
@@ -709,7 +706,6 @@
     <Content Include="Views\FreeTextBlock\Index.cshtml" />
     <Content Include="Views\Shared\_Category.cshtml" />
     <Content Include="Views\Shared\_ProductList.cshtml" />
-    <Content Include="Views\BackendLogin\Index.cshtml" />
     <Content Include="Views\Login\ExternalLoginConfirmation.cshtml" />
     <Content Include="Views\Login\ExternalLoginFailure.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
@@ -1078,4 +1074,27 @@
     <Content Include="modules\_protected\Commerce\Commerce.zip" />
     <Content Include="modules\_protected\EPiServer.Commerce.Shell.ManagerIntegration\EPiServer.Commerce.Shell.ManagerIntegration.zip" />
   </ItemGroup>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\EPiServer.Business.Commerce.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\EPiServer.Commerce.Internal.Migration.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.BusinessFoundation.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.BusinessFoundation.Data.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Commerce.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Commerce.Marketing.Validators.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Commerce.Plugins.Payment.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Commerce.Plugins.Shipping.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Commerce.Website.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Commerce.Workflow.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.DataProvider.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.FileUploader.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.MetaDataPlus.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Search.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Search.Extensions.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.Search.LuceneSearchProvider.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.SqlDataProvider.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\Mediachase.WebConsoleLib.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.UI.10.3.0\lib\net45\EPiServer.Commerce.Shell.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.UI.ManagerIntegration.10.3.0\lib\net45\EPiServer.Commerce.Shell.ManagerIntegration.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.UI.10.3.0\lib\net45\EPiServer.Commerce.UI.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\AjaxControlToolkit.dll</HintPath>
+      <HintPath>..\..\packages\EPiServer.Commerce.Core.10.3.0\lib\net45\nsoftware.IBizPay.dll</HintPath>
 </Project>
