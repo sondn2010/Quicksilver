@@ -1320,4 +1320,7 @@
   <data name="Market_Change_Warning" xml:space="preserve">
     <value>If the new market does not support the current currency, the currency will be changed to the new market's default and placed price to list price for all items.</value>
   </data>
+  <data name="Shipment_Id" xml:space="preserve">
+    <value>Shipment Id</value>
+  </data>
 </root>
