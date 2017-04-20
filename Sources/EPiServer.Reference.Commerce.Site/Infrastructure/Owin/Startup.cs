@@ -3,6 +3,7 @@ using EPiServer.Core;
 using EPiServer.Reference.Commerce.Shared.Identity;
 using EPiServer.ServiceLocation;
 using EPiServer.Web.Routing;
+using EPiServer.ServiceApi.Owin;
 using Mediachase.Data.Provider;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
@@ -74,6 +75,9 @@ namespace EPiServer.Reference.Commerce.Site.Infrastructure.Owin
             // To enable using an external provider like Facebook or Google, uncomment the options you want to make available.
             // Also remember to apply the correct client id and secret code to each method that you call below.
             // Uncomment the external login providers you want to enable in your site. Don't forget to change their respective client id and secret.
+            
+            // Enable bearer token authentication using ASP.NET Identity for Service Api
+            app.UseServiceApiIdentityTokenAuthorization<ApplicationUserManager<SiteUser>, SiteUser>();
 
             //EnableMicrosoftAccountLogin(app);
             //EnableTwitterAccountLogin(app);

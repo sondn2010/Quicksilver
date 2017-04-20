@@ -56,3 +56,10 @@ If you don't have mixed mode authentication enabled you can edit this line in Se
 ```
 set sql=sqlcmd -S . -U username -P password
 ```
+
+Customized
+----------
+
+Installed Episerver Service Api to default Quicksilver site.
+
+Change Quicksilver using bootwatch template (https://bootswatch.com/united/).

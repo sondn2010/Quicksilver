@@ -124,15 +124,7 @@ namespace EPiServer.Reference.Commerce.Site.Infrastructure
                     method.Delete();
                 }
                 PaymentManager.SavePayment(paymentMethodDto);
-
-                AddPaymentMethod(Guid.NewGuid(),
-                    "Pay By Credit Card",
-                    "Authorize",
-                    "Authorize - Pay By Credit Card.",
-                    "Mediachase.Commerce.Orders.CreditCardPayment, Mediachase.Commerce",
-                    "Mediachase.Commerce.Plugins.Payment.Authorize.AuthorizePaymentGateway, Mediachase.Commerce.Plugins.Payment",
-                    true, 1, allMarkets, language, paymentMethodDto);
-
+                
                 AddPaymentMethod(Guid.NewGuid(),
                     "Credit card",
                     "GenericCreditCard",
