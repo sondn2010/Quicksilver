@@ -535,7 +535,7 @@
     <value>OrderGroupAddressId</value>
   </data>
   <data name="Ordering" xml:space="preserve">
-    <value>Beställning</value>
+    <value>Sortering</value>
   </data>
   <data name="Friendly_Name" xml:space="preserve">
     <value>Eget namn</value>
@@ -1289,5 +1289,8 @@
   </data>
   <data name="LineItem_RemovedDueToUnavailableItem" xml:space="preserve">
     <value>Artikel {0} är inte tillgänglig i butik och har därför tagits bort från din varukorg.</value>
+  </data>
+  <data name="Shipment_Id" xml:space="preserve">
+    <value>Leverans-ID</value>
   </data>
 </root>
